@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+td{
+        text-align: center;
+        font-size: xx-large;
+        width: 80px;
+        border: 1px solid black;
+        text-align: center;
+    }
+        
+     input[type="button"] 
+         { 
+         width: 50px;
+         
+         color: black; 
+         
+         width:100% 
+         } 
+
+         input[type="text"] 
+         { 
+         background-color:white; 
+         height: 100px;
+         
+         width:100% ;
+         
+         }
+    </style>
+</head>
+<body>
+
+    <form name="forms">
+          <table id="table">
+              <tr  id="table-row">
+                  <td  colspan="4"  >
+                      <input type="text" id="button" name="answer">
+                  </td>
+             </tr>
+              <tr>
+                  <td> 
+                      <input type="button" value="AC" onclick="forms.answer.value=''" >
+                  </td>
+                  <td>
+                      <input type="button" value="+/-">
+                  </td>
+                  <td>
+                          <input type="button" value="%" onclick="forms.answer.value+='%'">
+                  </td>
+                  <td style="background-color: red">
+                          <input type="button" value="/" onclick="forms.answer.value+='/'">
+                  </td>
+  
+              </tr>
+              <tr>
+                  <td>
+                          <input type="button" value="7" onclick="forms.answer.value+='7'">
+                  </td>
+                  <td>
+                          <input type="button" value="8" onclick="forms.answer.value+='8'">
+                  </td>
+                  <td>
+                          <input type="button" value="9" onclick="forms.answer.value+='9'">
+                  </td>
+                  <td style="background-color: red">
+                          <input type="button" value="*" onclick="forms.answer.value+='*'">
+                       
+                  </td>
+               </tr>
+               <tr>
+                   <td>
+                          <input type="button" value="4" onclick="forms.answer.value+='4'">
+                      </td>
+                   <td>
+                          <input type="button" value="5" onclick="forms.answer.value+='5'">
+                      </td>
+                   <td>
+                          <input type="button" value="6" onclick="forms.answer.value+='6'">
+                      </td>
+                   <td style="background-color: red">
+                          <input type="button" value="-" onclick="forms.answer.value+='-'">
+                      </td>
+               </tr>
+              <tr>
+                  <td>
+                          <input type="button" value="1" onclick="forms.answer.value+='1'">
+                  </td>
+                  <td>
+                          <input type="button" value="2" onclick="forms.answer.value+='2'">
+                  </td>
+                  <td>
+                          <input type="button" value="3" onclick="forms.answer.value+='3'">
+                  </td>
+                  <td style="background-color: red">
+                          <input type="button" value="+" onclick="forms.answer.value+='+'">
+                  </td>
+              </tr>
+              <tr>
+                      <td colspan="2">
+                              <input type="button" value="0" onclick="forms.answer.value+='0'">
+                      </td>
+                      <td>
+                              <input type="button" value="." onclick="forms.answer.value+='.'">
+  
+                      </td>
+                      <td style="background-color: red">
+                              <input type="button" value="=" onclick="forms.answer.value=eval(forms.answer.value)">
+                      </td>
+                    </tr>
+  
+  
+              
+              
+  
+          </table>
+  
+  
+    </body>
+    </html>
+   
